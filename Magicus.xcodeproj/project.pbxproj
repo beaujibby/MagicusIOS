@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		436EEFF2E30283AA32B5C86A /* Pods_Magicus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A363B5DE9D6D513C74837D /* Pods_Magicus.framework */; };
 		E5D4C56E1D94A633002642E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4C56D1D94A633002642E5 /* AppDelegate.swift */; };
 		E5D4C5701D94A633002642E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4C56F1D94A633002642E5 /* ViewController.swift */; };
 		E5D4C5731D94A633002642E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D4C5711D94A633002642E5 /* Main.storyboard */; };
 		E5D4C5751D94A633002642E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D4C5741D94A633002642E5 /* Assets.xcassets */; };
 		E5D4C5781D94A633002642E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D4C5761D94A633002642E5 /* LaunchScreen.storyboard */; };
+		E5D4C5801D94AFAB002642E5 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4C57F1D94AFAB002642E5 /* GameCell.swift */; };
+		E5D4C5821D94B120002642E5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4C5811D94B120002642E5 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19A363B5DE9D6D513C74837D /* Pods_Magicus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Magicus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CE91E6D5A146DE3DB9FEF8 /* Pods-Magicus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magicus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Magicus/Pods-Magicus.release.xcconfig"; sourceTree = "<group>"; };
+		611946DBDEAFEAE68DF8B19A /* Pods-Magicus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Magicus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Magicus/Pods-Magicus.debug.xcconfig"; sourceTree = "<group>"; };
 		E5D4C56A1D94A633002642E5 /* Magicus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magicus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D4C56D1D94A633002642E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5D4C56F1D94A633002642E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		E5D4C5741D94A633002642E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5D4C5771D94A633002642E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5D4C5791D94A633002642E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D4C57F1D94AFAB002642E5 /* GameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		E5D4C5811D94B120002642E5 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436EEFF2E30283AA32B5C86A /* Pods_Magicus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5D0DAA3D92C85AC20DDF25C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				611946DBDEAFEAE68DF8B19A /* Pods-Magicus.debug.xcconfig */,
+				26CE91E6D5A146DE3DB9FEF8 /* Pods-Magicus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5D4C5611D94A633002642E5 = {
 			isa = PBXGroup;
 			children = (
 				E5D4C56C1D94A633002642E5 /* Magicus */,
 				E5D4C56B1D94A633002642E5 /* Products */,
+				D5D0DAA3D92C85AC20DDF25C /* Pods */,
+				EAAC5452A52FA72C7DEE5D58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +80,18 @@
 				E5D4C5741D94A633002642E5 /* Assets.xcassets */,
 				E5D4C5761D94A633002642E5 /* LaunchScreen.storyboard */,
 				E5D4C5791D94A633002642E5 /* Info.plist */,
+				E5D4C57F1D94AFAB002642E5 /* GameCell.swift */,
+				E5D4C5811D94B120002642E5 /* GameViewController.swift */,
 			);
 			path = Magicus;
+			sourceTree = "<group>";
+		};
+		EAAC5452A52FA72C7DEE5D58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19A363B5DE9D6D513C74837D /* Pods_Magicus.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5D4C57C1D94A633002642E5 /* Build configuration list for PBXNativeTarget "Magicus" */;
 			buildPhases = (
+				B6126CDE32FED41206FC9C9F /* [CP] Check Pods Manifest.lock */,
 				E5D4C5661D94A633002642E5 /* Sources */,
 				E5D4C5671D94A633002642E5 /* Frameworks */,
 				E5D4C5681D94A633002642E5 /* Resources */,
+				6EE875718927B34C88217FE9 /* [CP] Embed Pods Frameworks */,
+				ADA381D17B362FA47064B833 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +164,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6EE875718927B34C88217FE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Magicus/Pods-Magicus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADA381D17B362FA47064B833 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Magicus/Pods-Magicus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6126CDE32FED41206FC9C9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E5D4C5661D94A633002642E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D4C5821D94B120002642E5 /* GameViewController.swift in Sources */,
 				E5D4C5701D94A633002642E5 /* ViewController.swift in Sources */,
 				E5D4C56E1D94A633002642E5 /* AppDelegate.swift in Sources */,
+				E5D4C5801D94AFAB002642E5 /* GameCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +339,7 @@
 		};
 		E5D4C57D1D94A633002642E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 611946DBDEAFEAE68DF8B19A /* Pods-Magicus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Magicus/Info.plist;
@@ -268,6 +352,7 @@
 		};
 		E5D4C57E1D94A633002642E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CE91E6D5A146DE3DB9FEF8 /* Pods-Magicus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Magicus/Info.plist;
@@ -297,6 +382,7 @@
 				E5D4C57E1D94A633002642E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
